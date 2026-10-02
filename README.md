@@ -24,7 +24,7 @@
 
 <div align="center">
 
-https://github.com/anass9elalaoui-netizen/3wm-eco-rewards-showcase/raw/main/media/demo.mp4
+<a href="https://github.com/anass9elalaoui-netizen/3wm-eco-rewards/blob/main/media/demo.mp4"><b>▶ Click here to play the demo video</b></a>
 
 <sub>Full walkthrough: sign-up → verification → wallet reward.</sub>
 
