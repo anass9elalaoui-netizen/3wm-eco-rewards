@@ -1,0 +1,56 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environnement
+.env
+.env.local
+.env.production
+.env.development
+
+# Base de données locale Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# Fichiers uploadés (Ignorer les images de test, mais garder le dossier)
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Archives et fichiers générés
+*.zip
+dev.db
+*.tsbuildinfo
+
+# Deployment env (secrets)
+hostinger.env
+.env*.local
+
+# Local dev/IDE artifacts
+temp_prisma/
+.windsurf/
