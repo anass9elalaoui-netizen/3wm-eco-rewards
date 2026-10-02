@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 280" width="1280" height="280" role="img" aria-label="How it works: submit, verify, reward, spend">
+  <defs>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#15803d"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#14b8a6"/>
+    </marker>
+  </defs>
+  <style>
+    .card{fill:#f0fdf9;stroke:#99f6e4;stroke-width:2}
+    .t{font-family:'Segoe UI',Arial,sans-serif;font-weight:700;font-size:24px;fill:#064e3b;text-anchor:middle}
+    .d{font-family:'Segoe UI',Arial,sans-serif;font-size:17px;fill:#334155;text-anchor:middle}
+    .n{font-family:'Segoe UI',Arial,sans-serif;font-weight:800;font-size:20px;fill:#fff;text-anchor:middle}
+    .e{font-size:44px;text-anchor:middle}
+  </style>
+  <g>
+    <rect class="card" x="20" y="30" width="260" height="220" rx="20"/>
+    <circle cx="50" cy="30" r="20" fill="url(#a)"/><text class="n" x="50" y="37">1</text>
+    <text class="e" x="150" y="105">📸</text>
+    <text class="t" x="150" y="150">Submit</text>
+    <text class="d" x="150" y="182">Photo of the eco-action</text>
+    <text class="d" x="150" y="206">+ phone number</text>
+  </g>
+  <path d="M284 140H336" stroke="#14b8a6" stroke-width="4" stroke-linecap="round" marker-end="url(#arr)"/>
+  <g>
+    <rect class="card" x="340" y="30" width="260" height="220" rx="20"/>
+    <circle cx="370" cy="30" r="20" fill="url(#a)"/><text class="n" x="370" y="37">2</text>
+    <text class="e" x="470" y="105">🔍</text>
+    <text class="t" x="470" y="150">Verify</text>
+    <text class="d" x="470" y="182">A reviewer checks the proof</text>
+    <text class="d" x="470" y="206">in a secure dashboard</text>
+  </g>
+  <path d="M604 140H656" stroke="#14b8a6" stroke-width="4" stroke-linecap="round" marker-end="url(#arr)"/>
+  <g>
+    <rect class="card" x="660" y="30" width="260" height="220" rx="20"/>
+    <circle cx="690" cy="30" r="20" fill="url(#a)"/><text class="n" x="690" y="37">3</text>
+    <text class="e" x="790" y="105">💰</text>
+    <text class="t" x="790" y="150">Reward</text>
+    <text class="d" x="790" y="182">3WM tokens land in an</text>
+    <text class="d" x="790" y="206">auto-created wallet</text>
+  </g>
+  <path d="M924 140H976" stroke="#14b8a6" stroke-width="4" stroke-linecap="round" marker-end="url(#arr)"/>
+  <g>
+    <rect class="card" x="980" y="30" width="260" height="220" rx="20"/>
+    <circle cx="1010" cy="30" r="20" fill="url(#a)"/><text class="n" x="1010" y="37">4</text>
+    <text class="e" x="1110" y="105">🛍️</text>
+    <text class="t" x="1110" y="150">Spend</text>
+    <text class="d" x="1110" y="182">Scan a QR code at</text>
+    <text class="d" x="1110" y="206">partner merchants</text>
+  </g>
+</svg>

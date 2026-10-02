@@ -1,51 +1,126 @@
-# 3WM Eco-Reward Platform (Proof of Concept)
+<div align="center">
 
-> **Private portfolio project — all rights reserved. Not open source.**
+<img src="media/banner.svg" alt="3WM Eco-Rewards: turning eco-actions into digital rewards" width="100%"/>
 
-A Web3 eco-reward platform that turns real-world ecological actions (waste collection, clean-ups, tree planting) into **3WM tokens** (BEP-20 on BNB Smart Chain) — with no crypto knowledge required from the user.
+<br/>
 
-**Stack:** Next.js 16 · React · Prisma · MySQL · Privy (embedded wallets) · BNB Smart Chain
+![Status](https://img.shields.io/badge/status-working%20prototype-14b8a6?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-0b1f2a?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-0f172a?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8)
+![BNB Chain](https://img.shields.io/badge/BNB%20Chain-F0B90B?style=for-the-badge&logo=binance&logoColor=black)
+![Privy](https://img.shields.io/badge/Privy-6366f1?style=for-the-badge)
 
-## How it works
+**[▶ Watch the demo](#-demo)** &nbsp;·&nbsp; **[The idea](#-the-idea)** &nbsp;·&nbsp; **[Screens](#-screens)** &nbsp;·&nbsp; **[Roadmap](#-roadmap)** &nbsp;·&nbsp; **[Contact](#-about-me)**
 
-1. A user (ambassador/partner) signs up with name, phone number and photo.
-2. Privy creates a non-custodial **embedded wallet** — no MetaMask, no seed phrase.
-3. An admin reviews submissions in a protected dashboard and approves them.
-4. Approved actions trigger an on-chain **3WM token airdrop** to the user's wallet.
+<sub>🔒 Source code is private. This page presents the idea, the UX and a live demo.</sub>
 
-## Demo
+</div>
 
-Screen recording of the full flow: [`docs/media/demo.mp4`](docs/media/demo.mp4)
+---
 
-## Screenshots
+## 🎬 Demo
 
-| Partner sign-up | Embedded Web3 wallet |
+<div align="center">
+
+https://github.com/anass9elalaoui-netizen/3wm-eco-rewards-showcase/raw/main/media/demo.mp4
+
+<sub>Full walkthrough: sign-up → verification → wallet reward.</sub>
+
+</div>
+
+<!-- TIP: edit this README on GitHub and drag media/demo.mp4 into the editor above so the video plays inline. -->
+
+---
+
+## 🌍 The problem
+
+In Madagascar, Morocco and across francophone Africa, people clean beaches, collect waste and plant trees, and **nobody notices**.
+
+| | |
 |---|---|
-| ![Partner sign-up](docs/media/partner-signup.jpeg) | ![Wallet](docs/media/wallet.jpeg) |
+| 🚫 **No incentive** | Ecological effort goes unrewarded |
+| 🕵️ **No proof** | Nothing verifies that an action really happened |
+| 🔐 **No access to Web3** | No bank account, no MetaMask, no seed phrases |
 
-**Privy dashboard — wallets provisioned automatically for users**
+## 💡 The idea
 
-![Privy dashboard](docs/media/privy-dashboard.jpeg)
+One simple loop that anyone with a phone can use.
 
-## Highlights
+<div align="center">
+<img src="media/flow.svg" alt="Submit, verify, reward, spend" width="100%"/>
+</div>
 
-- Email/social login with auto-provisioned embedded wallets (Privy)
-- Admin dashboard with approval workflow, balance checks and token distribution
-- Route protection through `proxy.ts` (Next.js 16)
-- Ambassador module with photo upload and phone validation (international prefixes)
-- Prisma schema + MySQL, deployable on Hostinger
+> The user never sees a private key, a gas fee or a technical screen unless they ask for one.
 
-Full architecture, API reference and flows: [`PROJECT_OVERVIEW.md`](PROJECT_OVERVIEW.md).
+---
 
-## Run locally
+## 📱 Screens
 
-```bash
-cp .env.example .env   # fill in your own values
-npm install
-npx prisma generate
-npm run dev
-```
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="media/partner-signup.jpeg" alt="Ambassador sign-up form"/>
+      <br/><br/><b>30-second sign-up</b>
+      <br/><sub>Mobile-friendly · French UI · clear phone-prefix guidance</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="media/wallet.jpeg" alt="Auto-created Web3 wallet"/>
+      <br/><br/><b>Wallet created automatically</b>
+      <br/><sub>One tap to copy the address · zero crypto jargon</sub>
+    </td>
+  </tr>
+</table>
 
-## License
+<details>
+<summary><b>🛠 Behind the scenes: wallet infrastructure</b></summary>
+<br/>
 
-Copyright © Anass El Alaoui. All rights reserved. No permission is granted to use, copy, modify or distribute this code.
+Every new user gets an embedded wallet provisioned automatically.
+
+<img src="media/privy-dashboard.jpeg" alt="Wallet infrastructure dashboard"/>
+
+</details>
+
+---
+
+## 🧩 What I designed and built
+
+| 🎨 Design | ⚙️ Engineering | 🛡️ Product thinking |
+|---|---|---|
+| UX for non-crypto users | Auto-provisioned embedded wallets | Human verification before any reward |
+| Eco brand, glassmorphism UI | Admin approval workflow | Protected admin area |
+| Multilingual onboarding | On-chain token distribution (BEP-20) | Abuse and duplicate-photo risk analysis |
+
+**Stack:** Next.js · React · TypeScript · Tailwind · Prisma · MySQL · Privy · BNB Smart Chain
+
+The 3WM token is live and publicly verifiable on [BscScan](https://bscscan.com/address/0xd065ca6460ae6d379c93ec0422084c2bc7048d77).
+
+## 🗺 Roadmap
+
+- [x] Ambassador sign-up with photo upload
+- [x] Embedded wallets for non-crypto users
+- [x] Admin review and token airdrop
+- [x] QR code for spending
+- [ ] SMS one-time-password verification
+- [ ] Merchant app to scan QR payments
+- [ ] AI-assisted photo verification (fake and duplicate detection)
+- [ ] Scalable media storage
+
+---
+
+## 👋 About me
+
+<div align="center">
+
+**Anass El Alaoui**
+<br/>Product-minded developer building Web3 and eco-tech experiences
+
+[![Email](https://img.shields.io/badge/Email-anass9.elalaoui@gmail.com-14b8a6?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anass9.elalaoui@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-anass9elalaoui--netizen-181717?style=for-the-badge&logo=github)](https://github.com/anass9elalaoui-netizen)
+
+<sub>Want to see the code? I'm happy to walk you through it live.</sub>
+
+</div>
